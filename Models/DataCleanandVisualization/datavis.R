@@ -11,16 +11,6 @@ library(readr)
 
 
 
-base = df0[1:120,]
-
-citrain_base = group.CI(train ~ type , data = base, ci = 0.95)
-citest_base  = group.CI(test ~ type , data = base, ci = 0.95)
-cinumcov_base = group.CI(num_cov ~ type , data = base, ci = 0.95)
-citrain_base 
-citest_base 
-cinumcov_base
-
-
 #baseline Penalized Cox
 
 load("~/Dropbox/2020 Fall/deepsurvresults/11.18.m1.noscale.adjust.ridge.Rda")
